@@ -1,0 +1,17 @@
+{
+  "name": "flipboard-layout",
+  "version": "0.1.0",
+  "main": [
+    "./js/core.string.js",
+    "./js/jquery.flips.js",
+    "./js/jquery.history.js",
+    "./js/jquery.tmpl.min.js",
+    "./js/jquery.touchSwipe-1.2.5.js"
+  ],
+  "ignore": [
+    "**/.*"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  }
+}
