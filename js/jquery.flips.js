@@ -66,8 +66,8 @@
 			var $win = $( window );
 			
 			this.windowProp = {
-				width	: $win.width(),
-				height	: $win.height()
+				width	: $win.width() - 160,
+				height	: ($win.width() - 160) / 2
 			};
 		
 		},
@@ -553,8 +553,10 @@
 				$contentBack.css( 'width', _self.windowProp.width );
 			
 			} );
-			
-			$( window ).on( 'statechange.flips', function( event ) {
+
+//This part is for box popout, commented out for now
+	
+/*			$( window ).on( 'statechange.flips', function( event ) {
 				
 				_self._getState();
 				_self._goto();
@@ -661,7 +663,7 @@
 					
 				}, 0 );
 				
-			} );
+			} );*/
 			
 		},
 		_onEndFlip			: function( $page ) {
